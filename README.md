@@ -1,4 +1,4 @@
-# Terraform Hands On 🚀
+# Hands On Terraform  🚀
 
 Hi! This a hands-on guide for you wanna learn how to use Terraform to manage your infrastructure. This guide will cover the following topics:
 - Create a VM instance using Terraform.

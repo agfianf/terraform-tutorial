@@ -1,0 +1,15 @@
+.qodo
+*.log
+.DS_Store
+*.swp
+*~
+
+# Terraform state files
+terraform.tfstate
+terraform.tfstate.backup
+
+# Terraform working directory
+.terraform/
+
+# Sensitive files
+projects/files/secret-access.json
