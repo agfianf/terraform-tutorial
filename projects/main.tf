@@ -25,27 +25,27 @@ resource "google_compute_instance" "vm_instance" {
   network_interface {
     # Connect to our custom VPC subnet
     subnetwork = google_compute_subnetwork.vpc_subnet_vm.id
-    
+
     # Request an ephemeral external IP
     access_config {
       # Ephemeral public IP
     }
   }
 
-  tags = [ 
+  tags = [
     tolist(google_compute_firewall.allow_http.target_tags)[0],
     tolist(google_compute_firewall.allow_ssh.target_tags)[0],
-   ]
+  ]
 
   # VM metadata for SSH keys, startup scripts, etc.
   metadata = {
-    ssh-keys = file("~/.ssh/id_rsa.pub")
+    ssh-keys       = file("~/.ssh/id_rsa.pub")
     startup-script = file("files/startup.sh")
   }
 
   # Ensure VPC is created before instances
   depends_on = [
-      google_compute_subnetwork.vpc_subnet_vm
+    google_compute_subnetwork.vpc_subnet_vm
   ]
 
 
