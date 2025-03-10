@@ -30,7 +30,7 @@ variable "machine_type" {
 variable "instance_count" {
   description = "Count of VM instances to create"
   type        = number
-  default     = 1 # can do horizontal scaling
+  default     = 3 # can do horizontal scaling
 }
 
 variable "type_os_image" {

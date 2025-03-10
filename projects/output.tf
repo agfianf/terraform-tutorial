@@ -1,7 +1,3 @@
-# ------------------------------------------------------
-# TERRAFORM OUTPUTS
-# ------------------------------------------------------
-
 # Output the ID of the created VPC 
 output "vpc_id" {
   description = "The ID of the VPC"
