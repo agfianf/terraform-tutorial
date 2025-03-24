@@ -1,7 +1,7 @@
 # -- Provider
 variable "project_id" {
   description = "Project ID for the GCP project"
-  default     = "steady-circuit-452708-i7"
+  type        = string
 }
 
 variable "region" {

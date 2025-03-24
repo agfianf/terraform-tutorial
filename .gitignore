@@ -13,3 +13,6 @@ terraform.tfstate.backup
 
 # Sensitive files
 projects/files/secret-access.json
+**secret-access.json**
+.env
+*.tfvars

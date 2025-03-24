@@ -1,5 +1,10 @@
 # Hands On Terraform  🚀
 
+
+## Project 1
+![prject-1](./assets/terraform-vm.png)
+
+
 Hi! This a hands-on guide for you wanna learn how to use Terraform to manage your infrastructure. This guide will cover the following topics:
 - Create a VM instance using Terraform.
 - Configure a network and firewall rules.
@@ -22,3 +27,24 @@ Hi! This a hands-on guide for you wanna learn how to use Terraform to manage you
     ├── terraform.tfstate.backup
     └── variables.tf                # 📄: Defines variables used in the Terraform scripts.
 ```
+
+## Project 2 - Install Jenkins
+![prject-2](./assets/jenkins-overview.png)
+
+```bash
+└── 002-provisioning-jenkins
+    ├── main.tf
+    ├── network.tf
+    ├── output.tf
+    ├── provider.tf
+    ├── scripts
+    ├── terraform.tfstate
+    ├── terraform.tfstate.backup
+    ├── terraform.tfvars
+    └── variable.tf
+```
+
+
+## Reference:
+
+- Install Jenkins: https://phoenixnap.com/kb/install-jenkins-ubuntu
