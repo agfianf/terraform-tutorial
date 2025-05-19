@@ -23,7 +23,8 @@ Provisions a VM for running a FastAPI app with Docker and Docker Compose, includ
     ├── 001-provisioning-instance/
     ├── 002-provisioning-jenkins/
     ├── 003-self-hosted-gitlab/
-    └── 004-app-node/
+    ├── 004-app-node/
+    └── 005-provisioning-ec2-aws/
 ```
 
 ## Reference:
